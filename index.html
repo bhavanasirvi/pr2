@@ -1,59 +1,242 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>City Care Hospital</title>
-</head>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Care Hospital | Your Health, Our Priority</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
 <body>
 
-    <center>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="#home" class="logo">
+            <span class="logo-icon">✚</span>
+            CityCare<span class="logo-light">.</span>
+        </a>
 
-        <h1>City Care Hospital</h1>
-        <p>Quality Healthcare for Everyone</p>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#departments">Departments</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-        <hr>
+        <a href="#appointment" class="nav-button">
+            Book Appointment
+        </a>
 
-        <a href="#">Home</a> |
-        <a href="#">About Hospital</a> |
-        <a href="#">Doctors</a> |
-        <a href="#">Services</a> |
-        <a href="#">Contact</a>
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+    </header>
 
-        <hr>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">YOUR HEALTH, OUR PRIORITY</span>
 
-    </center>
+                <h1>Better Care.<br>
+                    <span>Healthier Lives.</span>
+                </h1>
 
-    <h2>Welcome to City Care Hospital</h2>
+                <p>
+                    Compassionate care, experienced doctors and
+                    modern healthcare facilities for you and your family.
+                </p>
 
-    <p>
-        City Care Hospital provides modern healthcare facilities
-        with experienced doctors and trained medical staff.
-    </p>
+                <div class="hero-buttons">
+                    <a href="#appointment" class="primary-button">
+                        Book an Appointment →
+                    </a>
+                    <a href="#departments" class="secondary-button">
+                        Explore Services
+                    </a>
+                </div>
 
-    <h2>Our Departments</h2>
+                <div class="hero-note">
+                    <span class="status-dot"></span>
+                    Emergency care available 24/7
+                </div>
+            </div>
 
-    <ul>
-        <li>Cardiology</li>
-        <li>Neurology</li>
-        <li>Orthopedics</li>
-        <li>General Medicine</li>
-        <li>Pediatrics</li>
-    </ul>
+            <div class="hero-visual">
+                <div class="medical-symbol">✚</div>
+                <div class="visual-card">
+                    <span class="visual-icon">♡</span>
+                    <div>
+                        <strong>Care You Can Trust</strong>
+                        <p>Your health matters to us.</p>
+                    </div>
+                </div>
+                <div class="visual-label">CITY CARE HOSPITAL</div>
+            </div>
+        </section>
 
-    <h2>Emergency Services</h2>
+        <!-- Highlights -->
+        <section class="highlights">
+            <div class="highlight-item">
+                <span class="highlight-icon">✚</span>
+                <div>
+                    <h3>Expert Care</h3>
+                    <p>Experienced medical staff</p>
+                </div>
+            </div>
 
-    <p>
-        Emergency services are available 24 hours a day,
-        7 days a week.
-    </p>
+            <div class="highlight-item">
+                <span class="highlight-icon">◷</span>
+                <div>
+                    <h3>24/7 Emergency</h3>
+                    <p>Help when you need it</p>
+                </div>
+            </div>
 
-    <h3>Emergency Contact: 9876543210</h3>
+            <div class="highlight-item">
+                <span class="highlight-icon">♡</span>
+                <div>
+                    <h3>Patient First</h3>
+                    <p>Care with compassion</p>
+                </div>
+            </div>
+        </section>
 
-    <hr>
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="section-heading">
+                <span class="eyebrow">ABOUT OUR HOSPITAL</span>
+                <h2>Healthcare with a <span>human touch.</span></h2>
+            </div>
 
-    <center>
-        <p>© 2026 City Care Hospital</p>
-    </center>
+            <p class="about-text">
+                City Care Hospital is committed to providing quality
+                healthcare in a comfortable and caring environment.
+                Our focus is on patient well-being, medical excellence
+                and making healthcare accessible to everyone.
+            </p>
+        </section>
+
+        <!-- Departments -->
+        <section class="section departments" id="departments">
+            <div class="section-heading">
+                <span class="eyebrow">OUR SPECIALITIES</span>
+                <h2>Care for every <span>need.</span></h2>
+                <p>Explore our medical departments and services.</p>
+            </div>
+
+            <div class="department-grid">
+                <article class="department-card">
+                    <div class="department-icon">♡</div>
+                    <h3>Cardiology</h3>
+                    <p>Heart health, diagnosis and cardiac care.</p>
+                </article>
+
+                <article class="department-card">
+                    <div class="department-icon">◉</div>
+                    <h3>Neurology</h3>
+                    <p>Care for the brain and nervous system.</p>
+                </article>
+
+                <article class="department-card">
+                    <div class="department-icon">✚</div>
+                    <h3>Orthopedics</h3>
+                    <p>Bone, joint and mobility care.</p>
+                </article>
+
+                <article class="department-card">
+                    <div class="department-icon">＋</div>
+                    <h3>General Medicine</h3>
+                    <p>Medical guidance for everyday health.</p>
+                </article>
+
+                <article class="department-card">
+                    <div class="department-icon">⌂</div>
+                    <h3>Pediatrics</h3>
+                    <p>Healthcare for infants and children.</p>
+                </article>
+
+                <article class="department-card">
+                    <div class="department-icon">♡</div>
+                    <h3>Emergency Care</h3>
+                    <p>Emergency assistance available 24/7.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Emergency Banner -->
+        <section class="emergency-banner" id="contact">
+            <div>
+                <span class="eyebrow">NEED URGENT HELP?</span>
+                <h2>We are here for you, day and night.</h2>
+                <p>Emergency services are available 24 hours a day.</p>
+            </div>
+            <a href="tel:9876543210" class="emergency-button">
+                ☎ 9876543210
+            </a>
+        </section>
+
+        <!-- Appointment Form -->
+        <section class="section appointment" id="appointment">
+            <div class="section-heading">
+                <span class="eyebrow">PLAN YOUR VISIT</span>
+                <h2>Book an <span>appointment.</span></h2>
+                <p>Fill in your details to submit an appointment request.</p>
+            </div>
+
+            <form id="appointmentForm" class="appointment-form">
+                <div class="form-group">
+                    <label for="patientName">Full Name</label>
+                    <input type="text" id="patientName"
+                           placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="patientEmail">Email Address</label>
+                    <input type="email" id="patientEmail"
+                           placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Select Department</label>
+                    <select id="department" required>
+                        <option value="">Choose a department</option>
+                        <option>Cardiology</option>
+                        <option>Neurology</option>
+                        <option>Orthopedics</option>
+                        <option>General Medicine</option>
+                        <option>Pediatrics</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="visitDate">Preferred Date</label>
+                    <input type="date" id="visitDate" required>
+                </div>
+
+                <button type="submit" class="primary-button form-button">
+                    Submit Request →
+                </button>
+
+                <p id="formMessage" class="form-message"
+                   role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo footer-logo">
+            <span class="logo-icon">✚</span>
+            CityCare<span class="logo-light">.</span>
+        </a>
+        <p>Quality Healthcare for Everyone.</p>
+        <p class="copyright">
+            &copy; 2026 City Care Hospital. All rights reserved.
+        </p>
+    </footer>
 
 </body>
 </html>
